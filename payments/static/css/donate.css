@@ -1,0 +1,204 @@
+.brand-color {
+    color: #CCA243;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.brand-background {
+    background-color: #CCA243;
+}
+
+.hero-section {
+    height: 70vh;
+    background-image: url('https://images.pexels.com/photos/5905458/pexels-photo-5905458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overlay {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 32px;
+    align-items: center;
+}
+
+header {
+    padding-top: 100px !important;
+    background: black;
+    background-color: black;
+    padding: 32px;
+}
+
+.h2s {
+    color: #CCA243;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.first-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    border: 1px solid #CCA243;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .first-section {
+        padding: 16px;
+    }
+
+    .amount-raised {
+        text-align: center;
+    }
+}
+
+.leftside {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+}
+
+.rightside {
+    flex: 1;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.student-info {
+    display: flex;
+    gap: 20px;
+    align-items: top;
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+.navbar-brand {
+    padding-left: 80px !important;
+}
+
+nav {
+    position: absolute !important;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(250, 210, 114, 0.1) !important;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+}
+
+.dropdown-menu li {
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.dropdown-menu a {
+    color: white !important;
+}
+
+.dropdown-menu a:hover {
+    color: black !important;
+    background-color: #CCA243 !important;
+    background: #CCA243 !important;
+}
+
+.dropdown-item .selected {
+    color: black !important;
+    background-color: #CCA243 !important;
+    background: #CCA243 !important;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: black;
+    /* Footer background */
+    color: white;
+    /* Text color */
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        justify-content: start;
+        gap: 28px;
+        padding: 16px;
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h5 {
+    color: #CCA243;
+    /* Heading color */
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    /* Spacing between links */
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 100px;
+    /* Logo size */
+}
+
+.footer-logo p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hide-footer-item {
+        display: none;
+    }
+
+}

@@ -1,0 +1,75 @@
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.image-overlay .visually-hidden {
+    display: none;
+    top: 50%;
+    left: 50%;
+}
+
+.token_error_dialog {
+    display: flex;
+    background-color: rgb(38, 38, 38);
+    padding: 32px;
+    border-radius: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.token_error_dialog hr {
+    background-color: #CCA243;
+}
+
+@media screen and (max-width: 768px) {
+    .token_error_dialog {
+        width: 90%;
+    }
+    
+}
+
+.kozesa-token-image {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
+.token-error-dialog-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.token-dialog-dismiss-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #CCA243;
+    color: black;
+    border-radius: 32px;
+    border: none;
+    margin: 16px;
+    padding: 8px 32px;
+}
+
+.token-dialog-dismiss-button:hover {
+    cursor: pointer;
+}
+

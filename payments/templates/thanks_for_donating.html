@@ -1,0 +1,21 @@
+{% load static %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static 'css/thanks_for_donating.css' %}" />
+{% endblock %}
+
+<div class="image-overlay visually-hidden" id="thankYouDialog">
+  <div class="token_error_dialog">
+    <h2>Thank You for donating</h2>
+    <hr />
+    <dotlottie-player src="https://firebasestorage.googleapis.com/v0/b/help2study-dab75.appspot.com/o/lotties%2FAnimation%20-%201704458543408.json?alt=media&token=85403d95-a693-4482-ac7d-33017d82c492" background="transparent" speed="1" style="width: 200px; height:200px;" loop autoplay></dotlottie-player>
+    <h6 class="text-center">From the depths of our hearts, we extend our most sincere thanks for your generous donation to our scholarship program. Your contribution is far more than a monetary gift; it's a powerful beacon of hope and a tangible act of faith in the future of {{ student.firstName }} {{ student.middleName }} {{ student.lastName }}. Through your kindness, you have played a pivotal role in a remarkable journey. <br /> <br /> Your support will be the cornerstone that enables {{ student.firstName }} {{ student.middleName }} {{ student.lastName }} to bridge the gap to their dreams. <br /> <br /> Thank you</h6>
+
+    <button class="token-dialog-dismiss-button" onclick="hideDialog()">Return to Student</button>
+  </div>
+</div>
+
+{% block script %}
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+  <script src="{% static 'js/thanks_for_donating.js' %}"></script>
+{% endblock %}
